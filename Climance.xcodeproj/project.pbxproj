@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		327BCEA02B123CDD00093C18 /* ClimanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BCE9F2B123CDD00093C18 /* ClimanceApp.swift */; };
+		327BCEA22B123CDE00093C18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BCEA12B123CDE00093C18 /* ContentView.swift */; };
+		327BCEA42B123CE000093C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327BCEA32B123CE000093C18 /* Assets.xcassets */; };
+		327BCEA82B123CE000093C18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327BCEA72B123CE000093C18 /* Preview Assets.xcassets */; };
+		327BCEB22B123CE100093C18 /* ClimanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BCEB12B123CE100093C18 /* ClimanceTests.swift */; };
+		327BCEBC2B123CE100093C18 /* ClimanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BCEBB2B123CE100093C18 /* ClimanceUITests.swift */; };
+		327BCEBE2B123CE100093C18 /* ClimanceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BCEBD2B123CE100093C18 /* ClimanceUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		327BCEAE2B123CE100093C18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327BCE942B123CDD00093C18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 327BCE9B2B123CDD00093C18;
+			remoteInfo = Climance;
+		};
+		327BCEB82B123CE100093C18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327BCE942B123CDD00093C18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 327BCE9B2B123CDD00093C18;
+			remoteInfo = Climance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		327BCE9C2B123CDD00093C18 /* Climance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Climance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		327BCE9F2B123CDD00093C18 /* ClimanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimanceApp.swift; sourceTree = "<group>"; };
+		327BCEA12B123CDE00093C18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		327BCEA32B123CE000093C18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		327BCEA52B123CE000093C18 /* Climance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Climance.entitlements; sourceTree = "<group>"; };
+		327BCEA72B123CE000093C18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		327BCEAD2B123CE100093C18 /* ClimanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		327BCEB12B123CE100093C18 /* ClimanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimanceTests.swift; sourceTree = "<group>"; };
+		327BCEB72B123CE100093C18 /* ClimanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		327BCEBB2B123CE100093C18 /* ClimanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimanceUITests.swift; sourceTree = "<group>"; };
+		327BCEBD2B123CE100093C18 /* ClimanceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimanceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		327BCE992B123CDD00093C18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327BCEAA2B123CE100093C18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327BCEB42B123CE100093C18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		327BCE932B123CDD00093C18 = {
+			isa = PBXGroup;
+			children = (
+				327BCE9E2B123CDD00093C18 /* Climance */,
+				327BCEB02B123CE100093C18 /* ClimanceTests */,
+				327BCEBA2B123CE100093C18 /* ClimanceUITests */,
+				327BCE9D2B123CDD00093C18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		327BCE9D2B123CDD00093C18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				327BCE9C2B123CDD00093C18 /* Climance.app */,
+				327BCEAD2B123CE100093C18 /* ClimanceTests.xctest */,
+				327BCEB72B123CE100093C18 /* ClimanceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		327BCE9E2B123CDD00093C18 /* Climance */ = {
+			isa = PBXGroup;
+			children = (
+				327BCE9F2B123CDD00093C18 /* ClimanceApp.swift */,
+				327BCEA12B123CDE00093C18 /* ContentView.swift */,
+				327BCEA32B123CE000093C18 /* Assets.xcassets */,
+				327BCEA52B123CE000093C18 /* Climance.entitlements */,
+				327BCEA62B123CE000093C18 /* Preview Content */,
+			);
+			path = Climance;
+			sourceTree = "<group>";
+		};
+		327BCEA62B123CE000093C18 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				327BCEA72B123CE000093C18 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		327BCEB02B123CE100093C18 /* ClimanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				327BCEB12B123CE100093C18 /* ClimanceTests.swift */,
+			);
+			path = ClimanceTests;
+			sourceTree = "<group>";
+		};
+		327BCEBA2B123CE100093C18 /* ClimanceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				327BCEBB2B123CE100093C18 /* ClimanceUITests.swift */,
+				327BCEBD2B123CE100093C18 /* ClimanceUITestsLaunchTests.swift */,
+			);
+			path = ClimanceUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		327BCE9B2B123CDD00093C18 /* Climance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327BCEC12B123CE100093C18 /* Build configuration list for PBXNativeTarget "Climance" */;
+			buildPhases = (
+				327BCE982B123CDD00093C18 /* Sources */,
+				327BCE992B123CDD00093C18 /* Frameworks */,
+				327BCE9A2B123CDD00093C18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Climance;
+			productName = Climance;
+			productReference = 327BCE9C2B123CDD00093C18 /* Climance.app */;
+			productType = "com.apple.product-type.application";
+		};
+		327BCEAC2B123CE100093C18 /* ClimanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327BCEC42B123CE100093C18 /* Build configuration list for PBXNativeTarget "ClimanceTests" */;
+			buildPhases = (
+				327BCEA92B123CE100093C18 /* Sources */,
+				327BCEAA2B123CE100093C18 /* Frameworks */,
+				327BCEAB2B123CE100093C18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				327BCEAF2B123CE100093C18 /* PBXTargetDependency */,
+			);
+			name = ClimanceTests;
+			productName = ClimanceTests;
+			productReference = 327BCEAD2B123CE100093C18 /* ClimanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		327BCEB62B123CE100093C18 /* ClimanceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327BCEC72B123CE100093C18 /* Build configuration list for PBXNativeTarget "ClimanceUITests" */;
+			buildPhases = (
+				327BCEB32B123CE100093C18 /* Sources */,
+				327BCEB42B123CE100093C18 /* Frameworks */,
+				327BCEB52B123CE100093C18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				327BCEB92B123CE100093C18 /* PBXTargetDependency */,
+			);
+			name = ClimanceUITests;
+			productName = ClimanceUITests;
+			productReference = 327BCEB72B123CE100093C18 /* ClimanceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		327BCE942B123CDD00093C18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					327BCE9B2B123CDD00093C18 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					327BCEAC2B123CE100093C18 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 327BCE9B2B123CDD00093C18;
+					};
+					327BCEB62B123CE100093C18 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 327BCE9B2B123CDD00093C18;
+					};
+				};
+			};
+			buildConfigurationList = 327BCE972B123CDD00093C18 /* Build configuration list for PBXProject "Climance" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 327BCE932B123CDD00093C18;
+			productRefGroup = 327BCE9D2B123CDD00093C18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				327BCE9B2B123CDD00093C18 /* Climance */,
+				327BCEAC2B123CE100093C18 /* ClimanceTests */,
+				327BCEB62B123CE100093C18 /* ClimanceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		327BCE9A2B123CDD00093C18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327BCEA82B123CE000093C18 /* Preview Assets.xcassets in Resources */,
+				327BCEA42B123CE000093C18 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327BCEAB2B123CE100093C18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327BCEB52B123CE100093C18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		327BCE982B123CDD00093C18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327BCEA22B123CDE00093C18 /* ContentView.swift in Sources */,
+				327BCEA02B123CDD00093C18 /* ClimanceApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327BCEA92B123CE100093C18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327BCEB22B123CE100093C18 /* ClimanceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327BCEB32B123CE100093C18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327BCEBE2B123CE100093C18 /* ClimanceUITestsLaunchTests.swift in Sources */,
+				327BCEBC2B123CE100093C18 /* ClimanceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		327BCEAF2B123CE100093C18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 327BCE9B2B123CDD00093C18 /* Climance */;
+			targetProxy = 327BCEAE2B123CE100093C18 /* PBXContainerItemProxy */;
+		};
+		327BCEB92B123CE100093C18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 327BCE9B2B123CDD00093C18 /* Climance */;
+			targetProxy = 327BCEB82B123CE100093C18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		327BCEBF2B123CE100093C18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		327BCEC02B123CE100093C18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		327BCEC22B123CE100093C18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Climance/Climance.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Climance/Preview Content\"";
+				DEVELOPMENT_TEAM = H3V2LZ4MW4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = liellison.Climance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		327BCEC32B123CE100093C18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Climance/Climance.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Climance/Preview Content\"";
+				DEVELOPMENT_TEAM = H3V2LZ4MW4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = liellison.Climance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		327BCEC52B123CE100093C18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H3V2LZ4MW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = liellison.ClimanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Climance.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Climance";
+			};
+			name = Debug;
+		};
+		327BCEC62B123CE100093C18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H3V2LZ4MW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = liellison.ClimanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Climance.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Climance";
+			};
+			name = Release;
+		};
+		327BCEC82B123CE100093C18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H3V2LZ4MW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = liellison.ClimanceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Climance;
+			};
+			name = Debug;
+		};
+		327BCEC92B123CE100093C18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H3V2LZ4MW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = liellison.ClimanceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Climance;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		327BCE972B123CDD00093C18 /* Build configuration list for PBXProject "Climance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327BCEBF2B123CE100093C18 /* Debug */,
+				327BCEC02B123CE100093C18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327BCEC12B123CE100093C18 /* Build configuration list for PBXNativeTarget "Climance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327BCEC22B123CE100093C18 /* Debug */,
+				327BCEC32B123CE100093C18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327BCEC42B123CE100093C18 /* Build configuration list for PBXNativeTarget "ClimanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327BCEC52B123CE100093C18 /* Debug */,
+				327BCEC62B123CE100093C18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327BCEC72B123CE100093C18 /* Build configuration list for PBXNativeTarget "ClimanceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327BCEC82B123CE100093C18 /* Debug */,
+				327BCEC92B123CE100093C18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 327BCE942B123CDD00093C18 /* Project object */;
+}
