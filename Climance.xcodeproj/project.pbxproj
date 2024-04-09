@@ -14,6 +14,8 @@
 		327BCEB22B123CE100093C18 /* ClimanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BCEB12B123CE100093C18 /* ClimanceTests.swift */; };
 		327BCEBC2B123CE100093C18 /* ClimanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BCEBB2B123CE100093C18 /* ClimanceUITests.swift */; };
 		327BCEBE2B123CE100093C18 /* ClimanceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BCEBD2B123CE100093C18 /* ClimanceUITestsLaunchTests.swift */; };
+		32996CB92BC5B5AA001435D3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 32996CB82BC5B5AA001435D3 /* Alamofire */; };
+		32996CBB2BC5B5AA001435D3 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 32996CBA2BC5B5AA001435D3 /* AlamofireDynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32996CB92BC5B5AA001435D3 /* Alamofire in Frameworks */,
+				32996CBB2BC5B5AA001435D3 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +99,16 @@
 		327BCE9E2B123CDD00093C18 /* Climance */ = {
 			isa = PBXGroup;
 			children = (
+				32996CBC2BC5B938001435D3 /* Application */,
+				32996CBD2BC5BBC7001435D3 /* Domain */,
+				32996CBE2BC5BBE6001435D3 /* Presentation */,
+				32996CBF2BC5BBF8001435D3 /* Data */,
+				32996CC02BC5BC06001435D3 /* Infrastructure */,
+				327BCEA62B123CE000093C18 /* Preview Content */,
+				327BCEA32B123CE000093C18 /* Assets.xcassets */,
 				327BCE9F2B123CDD00093C18 /* ClimanceApp.swift */,
 				327BCEA12B123CDE00093C18 /* ContentView.swift */,
-				327BCEA32B123CE000093C18 /* Assets.xcassets */,
 				327BCEA52B123CE000093C18 /* Climance.entitlements */,
-				327BCEA62B123CE000093C18 /* Preview Content */,
 			);
 			path = Climance;
 			sourceTree = "<group>";
@@ -129,6 +138,121 @@
 			path = ClimanceUITests;
 			sourceTree = "<group>";
 		};
+		32996CBC2BC5B938001435D3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		32996CBD2BC5BBC7001435D3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				32996CC32BC5BD7D001435D3 /* Interfaces */,
+				32996CC22BC5BD67001435D3 /* UseCases */,
+				32996CC12BC5BD5D001435D3 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		32996CBE2BC5BBE6001435D3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				32996CC62BC5BE17001435D3 /* ViewModel */,
+				32996CC52BC5BE09001435D3 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		32996CBF2BC5BBF8001435D3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				32996CC92BC5BE4E001435D3 /* Repositories */,
+				32996CC82BC5BE42001435D3 /* Network */,
+				32996CC72BC5BE30001435D3 /* PersistentStorages */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		32996CC02BC5BC06001435D3 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				32996CCA2BC5BE5F001435D3 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		32996CC12BC5BD5D001435D3 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		32996CC22BC5BD67001435D3 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		32996CC32BC5BD7D001435D3 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				32996CC42BC5BD8D001435D3 /* Repositories */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		32996CC42BC5BD8D001435D3 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		32996CC52BC5BE09001435D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32996CC62BC5BE17001435D3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		32996CC72BC5BE30001435D3 /* PersistentStorages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PersistentStorages;
+			sourceTree = "<group>";
+		};
+		32996CC82BC5BE42001435D3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		32996CC92BC5BE4E001435D3 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		32996CCA2BC5BE5F001435D3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +269,10 @@
 			dependencies = (
 			);
 			name = Climance;
+			packageProductDependencies = (
+				32996CB82BC5B5AA001435D3 /* Alamofire */,
+				32996CBA2BC5B5AA001435D3 /* AlamofireDynamic */,
+			);
 			productName = Climance;
 			productReference = 327BCE9C2B123CDD00093C18 /* Climance.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +345,9 @@
 				Base,
 			);
 			mainGroup = 327BCE932B123CDD00093C18;
+			packageReferences = (
+				32996CB72BC5B5AA001435D3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 327BCE9D2B123CDD00093C18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -612,6 +743,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		32996CB72BC5B5AA001435D3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		32996CB82BC5B5AA001435D3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32996CB72BC5B5AA001435D3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		32996CBA2BC5B5AA001435D3 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32996CB72BC5B5AA001435D3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 327BCE942B123CDD00093C18 /* Project object */;
 }
