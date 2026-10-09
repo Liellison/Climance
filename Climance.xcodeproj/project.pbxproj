@@ -15,10 +15,10 @@
 		327BCEBC2B123CE100093C18 /* ClimanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BCEBB2B123CE100093C18 /* ClimanceUITests.swift */; };
 		327BCEBE2B123CE100093C18 /* ClimanceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BCEBD2B123CE100093C18 /* ClimanceUITestsLaunchTests.swift */; };
 		32996CB92BC5B5AA001435D3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 32996CB82BC5B5AA001435D3 /* Alamofire */; };
-		32996CBB2BC5B5AA001435D3 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 32996CBA2BC5B5AA001435D3 /* AlamofireDynamic */; };
 		32996CCC2BC62695001435D3 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32996CCB2BC62694001435D3 /* APIConstants.swift */; };
-		32996CCD2BC62695001435D3 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32996CCB2BC62694001435D3 /* APIConstants.swift */; };
-		32996CCE2BC62695001435D3 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32996CCB2BC62694001435D3 /* APIConstants.swift */; };
+		BB0000000000000000000001 /* LocalWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000001 /* LocalWeatherModel.swift */; };
+		BB0000000000000000000002 /* CitySearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000002 /* CitySearchModel.swift */; };
+		BB0000000000000000000003 /* WeatherComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000003 /* WeatherComponents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +51,9 @@
 		327BCEBB2B123CE100093C18 /* ClimanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimanceUITests.swift; sourceTree = "<group>"; };
 		327BCEBD2B123CE100093C18 /* ClimanceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimanceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		32996CCB2BC62694001435D3 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		AA0000000000000000000001 /* LocalWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalWeatherModel.swift; sourceTree = "<group>"; };
+		AA0000000000000000000002 /* CitySearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchModel.swift; sourceTree = "<group>"; };
+		AA0000000000000000000003 /* WeatherComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherComponents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +62,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				32996CB92BC5B5AA001435D3 /* Alamofire in Frameworks */,
-				32996CBB2BC5B5AA001435D3 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +220,7 @@
 		32996CC52BC5BE09001435D3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AA0000000000000000000003 /* WeatherComponents.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +228,8 @@
 		32996CC62BC5BE17001435D3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AA0000000000000000000002 /* CitySearchModel.swift */,
+				AA0000000000000000000001 /* LocalWeatherModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -276,7 +281,6 @@
 			name = Climance;
 			packageProductDependencies = (
 				32996CB82BC5B5AA001435D3 /* Alamofire */,
-				32996CBA2BC5B5AA001435D3 /* AlamofireDynamic */,
 			);
 			productName = Climance;
 			productReference = 327BCE9C2B123CDD00093C18 /* Climance.app */;
@@ -396,6 +400,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				327BCEA22B123CDE00093C18 /* ContentView.swift in Sources */,
+				BB0000000000000000000003 /* WeatherComponents.swift in Sources */,
+				BB0000000000000000000002 /* CitySearchModel.swift in Sources */,
+				BB0000000000000000000001 /* LocalWeatherModel.swift in Sources */,
 				327BCEA02B123CDD00093C18 /* ClimanceApp.swift in Sources */,
 				32996CCC2BC62695001435D3 /* APIConstants.swift in Sources */,
 			);
@@ -405,7 +412,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32996CCD2BC62695001435D3 /* APIConstants.swift in Sources */,
 				327BCEB22B123CE100093C18 /* ClimanceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,7 +422,6 @@
 			files = (
 				327BCEBE2B123CE100093C18 /* ClimanceUITestsLaunchTests.swift in Sources */,
 				327BCEBC2B123CE100093C18 /* ClimanceUITests.swift in Sources */,
-				32996CCE2BC62695001435D3 /* APIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +556,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Climance/Climance.entitlements;
+                INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Usamos sua localização para mostrar a cidade e a temperatura atual.";
+                INFOPLIST_KEY_NSLocationUsageDescription = "Usamos sua localização para mostrar a cidade e a temperatura atual.";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Climance/Preview Content\"";
@@ -589,6 +596,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Climance/Climance.entitlements;
+                INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Usamos sua localização para mostrar a cidade e a temperatura atual.";
+                INFOPLIST_KEY_NSLocationUsageDescription = "Usamos sua localização para mostrar a cidade e a temperatura atual.";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Climance/Preview Content\"";
@@ -768,11 +777,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 32996CB72BC5B5AA001435D3 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		32996CBA2BC5B5AA001435D3 /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 32996CB72BC5B5AA001435D3 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

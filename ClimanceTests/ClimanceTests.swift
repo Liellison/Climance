@@ -1,35 +1,76 @@
-//
-//  ClimanceTests.swift
-//  ClimanceTests
-//
-//  Created by Liellison Menezes on 25/11/23.
-//
-
 import XCTest
+@testable import Climance
 
 final class ClimanceTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    private func service() -> WeatherService {
+        let configuration = URLSessionConfiguration.ephemeral
+        configuration.protocolClasses = [WeatherProtocol.self]
+        return WeatherService(session: URLSession(configuration: configuration))
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testSearchPreservesAccentsAndReturnsDistinctCities() async throws {
+        let cities = try await service().cities(matching: "  São Paulo  ")
+        XCTAssertEqual(cities.count, 2)
+        XCTAssertEqual(cities[0].displayName, "São Paulo, Brasil")
+        XCTAssertNotEqual(cities[0].id, cities[1].id)
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testEmptySearchDoesNotReachNetwork() async {
+        do {
+            _ = try await service().cities(matching: " ")
+            XCTFail("An empty search should be rejected")
+        } catch WeatherError.invalidCity {} catch { XCTFail("Unexpected error: \(error)") }
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
+    func testMissingCityHasRecoverableError() async {
+        do {
+            _ = try await service().cities(matching: "Missing")
+            XCTFail("Expected cityNotFound")
+        } catch WeatherError.cityNotFound {} catch { XCTFail("Unexpected error: \(error)") }
+    }
+
+    func testWeatherUsesSelectedCityCoordinates() async throws {
+        let cities = try await service().cities(matching: "São Paulo")
+        let result = try await service().temperature(for: cities[1])
+        XCTAssertEqual(result.temperature, -2.5)
+        XCTAssertEqual(result.location, cities[1].displayName)
+        XCTAssertLessThan(abs(result.updatedAt.timeIntervalSinceNow), 5)
+    }
+
+    func testServerFailureDoesNotBecomeWeatherReading() async {
+        do {
+            _ = try await service().cities(matching: "ServerError")
+            XCTFail("Expected unavailable")
+        } catch WeatherError.unavailable {} catch { XCTFail("Unexpected error: \(error)") }
+    }
+}
+
+private final class WeatherProtocol: URLProtocol {
+    override class func canInit(with request: URLRequest) -> Bool { true }
+    override class func canonicalRequest(for request: URLRequest) -> URLRequest { request }
+    override func startLoading() {
+        let url = request.url!
+        let parameters = URLComponents(url: url, resolvingAgainstBaseURL: false)!.queryItems ?? []
+        let query = Dictionary(uniqueKeysWithValues: parameters.map { ($0.name, $0.value ?? "") })
+        var status = 200
+        let json: String
+        if url.host == "geocoding-api.open-meteo.com" {
+            switch query["name"] {
+            case "São Paulo":
+                json = #"{"results":[{"id":1,"name":"São Paulo","admin1":"São Paulo","country":"Brasil","latitude":-23.55,"longitude":-46.63},{"id":2,"name":"São Paulo","country":"Portugal","latitude":40,"longitude":-8}]}"#
+            case "Missing": json = "{}"
+            case "ServerError": status = 503; json = "{}"
+            default: status = 400; json = "{}"
+            }
+        } else {
+            // The selected second city must be used, rather than the first search result.
+            if query["latitude"] == "40.0" && query["longitude"] == "-8.0" && query["temperature_unit"] == "celsius" {
+                json = #"{"current":{"temperature_2m":-2.5}}"#
+            } else { status = 400; json = "{}" }
         }
+        client?.urlProtocol(self, didReceive: HTTPURLResponse(url: url, statusCode: status, httpVersion: nil, headerFields: nil)!, cacheStoragePolicy: .notAllowed)
+        client?.urlProtocol(self, didLoad: Data(json.utf8))
+        client?.urlProtocolDidFinishLoading(self)
     }
-
+    override func stopLoading() {}
 }
